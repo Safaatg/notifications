@@ -1,0 +1,141 @@
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+  --radius-sm: 8px;
+  --fs2: 1.25rem;
+  --fs4: 1rem;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5;
+  background-color: var(--very-light-grayish-blue);
+  color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 2rem var(--light-grayish-blue-1);
+  padding: var(--fs4) var(--fs2);
+  max-width: 800px;
+  width: 100%;
+}
+
+
+
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  transition: color 200ms ease-in-out;
+    color: var(--blue);
+  }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.header button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  color: var(--very-dark-blue);
+  transition: color 200ms ease-in-out;
+}
+.header button:hover {
+  color: var(--blue);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+h1 {
+  font-size:16px;
+  line-height: 1;
+}
+ .badge {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: .6rem 1rem;
+  margin-top: .2rem;
+  line-height: 1;
+  border-radius: 8px;
+}
+
+
+.notification {
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  background-color: var(--very-light-grayish-blue);
+  margin-bottom: 0.6rem;
+}
+
+.notification-content {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.notification-content p {
+  margin: 0;
+}
+
+.notification-content a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  transition: color 200ms ease-in-out;
+  color: var(--blue);
+}
+
+.notification-content time {
+  color: var(--grayish-blue);
+}
+.time {
+  color: var(--grayish-blue);
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: var(--fs4);
+  }
+
+  .notification {
+    padding: 0.5rem;
+    display: flex;
+    align-items: start;
+  }
+  .notification-avatar img {
+    width: 60px;
+  }
+}
+
+
+
